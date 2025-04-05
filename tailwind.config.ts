@@ -13,6 +13,7 @@ export default {
     extend: {
       animation: {
         marquee: "marquee 30s linear infinite",
+        "fade-up": "fade-up 1s ease-out forwards",
       },
       keyframes: {
         marquee: {
@@ -22,6 +23,10 @@ export default {
           "100%": {
             transform: "translateX(-50%)",
           },
+        },
+        "fade-up": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
       colors: {

@@ -1,25 +1,14 @@
 "use client";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 interface VideoPProps {
   title: string;
   src: string;
 }
 
 const VideoP: React.FC<VideoPProps> = ({ title, src }) => {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
   return (
     <div className="flex w-full flex-col gap-10">
-      <h1
-        className="text-4xl md:text-6xl font-bold"
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-      >
-        {title}
-      </h1>
+      <h1 className="text-4xl md:text-6xl font-bold">{title}</h1>
       <div className="w-full aspect-video">
         <iframe
           className="w-full h-full"
