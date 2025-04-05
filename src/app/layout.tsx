@@ -7,7 +7,9 @@ import { getLocale, getMessages } from "next-intl/server";
 
 const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["400", "700"], // Оставь только нужные
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -28,9 +30,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
-        <link rel="icon" href="/Favicon140.ico" sizes="any" />
-        <link rel="icon" href="/Favicon140.png" type="image/png" />
-        <link rel="icon" href="/Favicon140.svg" type="image/svg+xml" />
+        <link rel="icon" href="/Favicon.ico" sizes="any" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body

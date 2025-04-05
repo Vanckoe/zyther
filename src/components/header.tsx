@@ -9,7 +9,10 @@ const HeaderMain = () => {
           className={`flex flex-row items-center w-full gap-5 justify-between`}
         >
           <Logo />
-          <h1 className="text-nowrap">ZYPHER</h1>
+          <h1 className="text-nowrap text-[2rem] md:text-[4rem] font-bold leading-tight">
+            ZYPHER
+          </h1>
+
           <div className=""></div>
         </header>
       </div>
