@@ -25,7 +25,7 @@ const Hiro = () => {
         <source src="/videos/hero.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="flex items-center justify-center -mt-[90px] min-h-screen">
+      <div className="flex items-center justify-center -mt-[90px] min-h-[100lvh]">
         <div className="flex flex-col gap-10 items-center justify-center">
           <p
             className="text-4xl md:text-8xl  font-semibold drop-shadow-[20px_20px_20px_black]"

@@ -4,7 +4,6 @@ import "./globals.css";
 import Footer from "@/components/footer";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import QueryProvider from "@/components/QueryProvider";
 
 const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
@@ -38,12 +37,10 @@ export default async function RootLayout({
         className={`${manrope.className} flex flex-col bg-noise bg-noise relative antialiased bg-[#000000] bg-repeat text-white`}
         style={{ backgroundImage: "url('/bg/bg-fin.png')" }}
       >
-        <QueryProvider>
-          <NextIntlClientProvider messages={messages}>
-            {children}
-            <Footer />
-          </NextIntlClientProvider>
-        </QueryProvider>
+        <NextIntlClientProvider messages={messages}>
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
