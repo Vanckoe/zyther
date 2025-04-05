@@ -14,7 +14,8 @@ const VideoP: React.FC<VideoPProps> = ({ title, src }) => {
           className="w-full h-full"
           src={src}
           title={title}
-          frameBorder="0"
+          loading="lazy"
+          sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-forms"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           referrerPolicy="no-referrer-when-downgrade"
           allowFullScreen

@@ -16,7 +16,7 @@ const Second: React.FC<SecondProps> = ({ scrollToProjects }) => {
             <span className="text-red-700">video editing</span>
           </h1>
           <div className="flex flex-col md:flex-row w-full gap-5">
-            <p className="border border-opacity-70 p-7 text-2xl font-semibold opacity-0 animate-fade-up delay-[600ms]">
+            <p className="border border-opacity-70 p-7 text-2xl font-semibold opacity-0 animate-fade-up delay-[600ms]  drop-shadow-[20px_20px_20px_black]">
               Not just editing. Storybuilding with rhythm and emotion. From raw
               thoughts to refined visuals — I give ideas a heartbeat.
             </p>
