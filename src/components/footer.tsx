@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-row items-center md:items-start justify-between w-full gap-2.5 ">
           <div className="flex flex-row items-center gap-5">
             <Logo />
-            <p className="">© All rights reserved</p>
+            <p className=" opacity-80">© All rights reserved</p>
           </div>
 
           <h1 className="text-nowrap">ZYPHER</h1>

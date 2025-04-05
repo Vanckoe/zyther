@@ -4,14 +4,18 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Button from "@/components/button";
 
-const Second = () => {
+interface SecondProps {
+  scrollToProjects: () => void;
+}
+
+const Second: React.FC<SecondProps> = ({ scrollToProjects }) => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
   return (
-    <div className="flex w-full flex-col md:flex-row  mx-auto container relative px-[30px] items-stretch gap-5">
-      <div className="w-full flex flex-col justify-center items-center min-h-screen mt-[70px]">
+    <div className="flex w-full flex-col md:flex-row mx-auto container relative px-[30px] items-stretch gap-5">
+      <div className="w-full flex flex-col justify-center items-center py-[150px] md:py-0 md:min-h-screen mt-[70px]">
         <div className="flex flex-col gap-10">
           <h1
             className="text-4xl md:text-8xl"
@@ -32,7 +36,8 @@ const Second = () => {
               thoughts to refined visuals — I give ideas a heartbeat.
             </p>
             <Button
-              className=" p-10 text-2xl font-semibold text-[#070c1e] "
+              className="p-10 text-2xl font-semibold text-[#070c1e]"
+              onClick={scrollToProjects}
               data-aos="fade-up"
               data-aos-delay="600"
               data-aos-anchor-placement="center-bottom"
