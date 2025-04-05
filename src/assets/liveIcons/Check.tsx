@@ -80,13 +80,15 @@ const CheckCheckIcon = forwardRef<CheckCheckIconHandle, CheckCheckIconProps>(
     return (
       <div
         className={cn(
-          `cursor-pointer select-none rounded-md transition-colors duration-200 flex items-center `,
+          `cursor-pointer select-none transition-colors duration-200 flex items-center `,
           className
         )}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         {...props}
       >
+        {children && <span className="text-sm">{children}</span>}
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={size}
@@ -113,7 +115,6 @@ const CheckCheckIcon = forwardRef<CheckCheckIconHandle, CheckCheckIconProps>(
             custom={1}
           />
         </svg>
-        {children && <span className="text-sm">{children}</span>}
       </div>
     );
   }
