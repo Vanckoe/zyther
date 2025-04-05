@@ -2,7 +2,7 @@ import React from "react";
 // import Link from "next/link";
 import Logo from "@/assets/Logo";
 // import { useTranslations } from "next-intl";
-import LanguageSwitcher from "./language-switcher";
+// import LanguageSwitcher from "./language-switcher";
 const Footer = () => {
   // const t = useTranslations("Navigation");
 
@@ -11,9 +11,10 @@ const Footer = () => {
       <footer className="container px-5 justify-between  text-white mx-auto w-full flex flex-col md:flex-row items-center">
         <div className="flex flex-row items-center md:items-start justify-between md:justify-start w-full md:w-fit md:flex-col gap-2.5 ">
           <Logo />
-          <div className=" md:hidden">
+          {/* <div className=" md:hidden">
             <LanguageSwitcher textColorFirstStage={"text-white"} />
-          </div>
+          </div> */}
+          <h1 className="text-nowrap">ZYPHER</h1>
         </div>
         <div className="flex flex-col-reverse md:flex-col items-end">
           <div className="flex flex-col-reverse w-full md:w-fit md:flex-row items-center gap-8 md:gap-12 justify-end">
@@ -25,9 +26,9 @@ const Footer = () => {
                 {t("about")}
               </Link>
             </div> */}
-            <div className="hidden md:block">
+            {/* <div className="hidden md:block">
               <LanguageSwitcher textColorFirstStage={"text-white"} />
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

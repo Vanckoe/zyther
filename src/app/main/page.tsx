@@ -1,9 +1,7 @@
 import React from "react";
 import Hiro from "./_components/hiro";
-// import Second from "./_components/second";
-// import Stack from "./_components/stack";
-// import RunBunner from "./_components/runBunner";
 import Second from "./_components/second";
+import Projects from "./_components/projects";
 
 const About = () => {
   return (
@@ -11,9 +9,7 @@ const About = () => {
       <Hiro />
       <div className="flex flex-col gap-[200px]">
         <Second />
-        {/* <RunBunner /> */}
-        {/* <Second /> */}
-        {/* <Stack /> */}
+        <Projects />
       </div>
     </div>
   );

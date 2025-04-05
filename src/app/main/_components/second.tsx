@@ -14,7 +14,7 @@ const Second = () => {
       <div className="w-full flex flex-col justify-center items-center min-h-screen mt-[70px]">
         <div className="flex flex-col gap-10">
           <h1
-            className="md:text-8xl"
+            className="text-4xl md:text-8xl"
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
           >
